@@ -1,0 +1,369 @@
+
+
+/* =========== Start Globale Style ============ */
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: 'Agency FB', arial;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  @font-face {
+    font-family: agency fb;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Agency FB'),local('AgencyFB-Regular'), 
+    url(../fonts/agency-fb_[allfont.net].ttf) format('truetype')
+  }
+
+  @font-face {
+    font-family:agency fb bold;
+    font-style:normal;
+    font-weight:700;
+    src:local('Agency FB Bold'),local('AgencyFB-Bold'),
+    url(../fonts/agency-fb-bold_[allfont.net].ttf) format('truetype')
+  }
+  
+  .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 2rem;
+  }
+    
+  a {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+  
+  .upper {
+    text-transform: uppercase;
+  }
+  
+  /* ============= End Globale Style ============= */
+
+  /* =============================
+            header style
+  ============================== */
+
+  header {
+    background: url('../images/bg-hero.gif') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  header .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translatey(-50%);
+  }
+
+  header .hero-title h1 {
+      font-size: 7rem;
+      font-weight: bold;
+      color: #377192;
+      margin: 0;
+      text-align: center;
+    }
+    
+    header .hero-title p {
+      font-size: 3rem;
+      color: #333;
+      margin: 0;
+  }
+
+  header .hero-title span {
+      font-size: 1.5rem;
+      color: #c3262e;
+      display: block;
+      text-align: center;
+  }
+
+  /* ====================
+        about style    
+    =====================*/
+
+.about {
+    margin: 2rem 0 8rem;
+    background: #fff;
+    position: relative;
+}
+
+.about .block p {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.about .block span {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: #000;
+    display: block;
+    margin: .5rem 0 2rem;
+}
+
+.about ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .7rem;
+    color: #191919;
+    list-style-position: inside;
+}
+
+.about ul.up-text {
+    margin-bottom: 5rem;
+}
+
+.about .wrap-img {
+    position: absolute;
+    top: 65%;
+    right: 2%;
+    width: 500px;
+    height: 600px;
+}
+
+.about .wrap-img img {
+  filter: drop-shadow(0 0 25px rgba(0, 0, 0, .2));
+}
+
+
+/* ===================
+      benefits style
+==================== */
+
+.benefits {
+  background: url('../images/benefits-bg.jpg') top;
+  padding: 3rem 0;
+}
+
+.benefits h2 {
+  letter-spacing: 2px;
+}
+
+.benefits .flex-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul.our-benefits {
+  margin-top: 1.5rem;
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ul.our-benefits li {
+  line-height: 2;
+  list-style-position: inside;
+}
+
+ul.our-benefits li i {
+  padding-right: .5rem;
+  color: #346481;
+}
+
+.benefits .flex-box .slider {
+  width: 55%;
+}
+
+.benefits .slider .master-img {
+  height: 300px;
+}
+
+.benefits .flex-box .slider .thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.benefits .flex-box .slider .thumbnails img {
+  cursor: pointer;
+  border: 1px solid #444;
+  padding: .2rem;
+  opacity: .6;
+  transition: all .3s linear;
+}
+
+.benefits .flex-box .slider .thumbnails img:last-child {
+  margin-right: 0 !important;
+}
+
+.benefits .flex-box .slider .thumbnails img.selected {
+  opacity: 1;
+}
+
+.benefits .flex-box .slider .thumbnails i {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* ===================
+    features style
+    ================ */
+
+.features {
+  padding: 2rem 0;
+  background: url('../images/img2.gif') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.features h2 {
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.features .flex-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features ul li {
+  line-height: 2;
+}
+
+.features a {
+  text-align: center;
+  display: block;
+  width: 15rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: .1rem 0;
+  border-radius: 15px;
+  margin: 2rem auto 0;
+  background: #fff;
+  color: #165c83;
+}
+
+.features a i {
+  padding-left: .3rem;
+}
+
+/* =================
+    packages style
+    =============== */
+    .packages {
+      padding: 2rem 0 4rem;
+      background: #fff;
+    }
+
+    .packages h2 {
+      letter-spacing: 2px;
+    }
+
+    .packages .flex-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .packages .flex-box .box {
+      width: 15%;
+      background: #f8f8f8;
+      padding: .7rem;
+      border-radius: 10px;
+      min-height: 260px;
+      border: 1px solid transparent;
+      transition: all .3s linear;
+    }
+
+    .packages .flex-box .box:hover {
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+
+    .packages .flex-box .box:not(:last-child) {
+      margin-right: .5rem;
+    }
+
+    .packages .flex-box .box .header {
+      background: #e8e8e8;
+      border-radius: 10px;
+      padding: .5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .packages .flex-box .box .header span:first-child {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-right: .5rem;
+      letter-spacing: 2px;
+      color: #165c83;
+    }
+
+    .packages .flex-box .box .header span:nth-child(2) {
+      color: #c3262e;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .packages .flex-box .box .body {
+      min-height: 150px;
+    }
+
+    .packages .flex-box .box .body ul {
+      margin-top: 1rem;
+    }
+
+    .packages .flex-box .box .body ul li {
+      list-style: none;
+      line-height: 1.5;
+      font-size: .9rem;
+    }
+
+    .packages .flex-box .box .footer {
+      width: 100%;
+      background: #c3262e;
+      border-radius: 15px;
+      padding: .5rem 0;
+      text-align: center;
+    }
+
+    .packages .flex-box .box .footer a {
+      color: #fff;
+      display: block;
+      width: 100%;
+    }
+    
+    .packages .flex-box .box .footer a.download {
+      font-size: 1rem;
+
+    }
